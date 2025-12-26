@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Advent of Code Privacy
+**/input.txt
+**/puzzle*.md
+real_results.json
+
+# Environment
+.DS_Store
+.env
+.venv/
+env/
+venv/
