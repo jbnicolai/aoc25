@@ -13,3 +13,4 @@ real_results.json
 .venv/
 env/
 venv/
+session.cookie

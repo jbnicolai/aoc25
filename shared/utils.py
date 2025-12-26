@@ -3,7 +3,7 @@ import urllib.request
 import urllib.error
 import re
 
-SESSION_COOKIE = "session=53616c7465645f5f62e962be88ebb2bfff374106913565bf3636fc07b3ebdd6b507fa223990c304900962a7013dda4b6980403fc55d348d1148f17925f0be61b"
+SESSION_COOKIE = open("session.cookie").read().strip() if os.path.exists("session.cookie") else ""
 
 def read_input(day: int, year: int = 2025, file_name: str = "input.txt") -> str:
     """Reads input file for Day X, fetching from web if needed."""
