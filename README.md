@@ -56,6 +56,19 @@ python3 runner.py -p
 python3 runner.py 12 -p
 ```
 
+### Scaffold a New Day
+The `shared/fetch_day.py` utility automates the creation of daily directories, downloads puzzle inputs, and converts puzzle descriptions to Markdown.
+
+```bash
+python3 -m shared.fetch_day 13
+```
+
+This will:
+1. Create `day13/` directory.
+2. Download `input.txt` (requires a valid `SESSION_COOKIE` in `shared/utils.py`).
+3. Fetch and convert the puzzle description to `day13/puzzle1.md`.
+4. Fetch Part 2 description as `day13/puzzle2.md` once Part 1 is unlocked.
+
 ## Project Structure
 
 - `dayXX/`: Daily solution directories.
